@@ -153,7 +153,17 @@ display: none
   margin: 10px auto 0;
   text-align: center;
   border-bottom:solid 2px #37373C;
+  position: relative;
+  height: 40px;
+  font-size: 14px
 }
+
+.currentlyPlayingInfo {
+  position: relative;
+  z-index: 30;
+}
+
+
 .controlButtons{
   text-align: center;
 }
@@ -188,6 +198,31 @@ display: none
 .PlayingControl {
   width: 700px
 }
+
+.spotifyButton{
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background: #006699;
+  height: 58px;
+  width: 100px;
+  background: url(/img/music-images/spotify.png) center right;
+  background-size: 200px 200px;
+  opacity: 0.4;
+}
+
+.pandoraButton{
+  position: absolute;
+  right: 0;
+  top: 1px;
+  background: url(/img/music-images/pandora.png) center left;
+  background-size: 150px 150px;
+  height: 58px;
+  width: 100px;
+  opacity: 0.4;
+  z-index: 20;  
+}
+
 
 .iconPlay{
   background: url(/img/music-images/Play.png);

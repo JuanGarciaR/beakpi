@@ -138,6 +138,7 @@ body {
   word-wrap: break-word;
   display: inline-block;
 }
+
 .trackWithoutArt .title .artist{
   font-weight: 100;
   width: 200px;
@@ -167,6 +168,12 @@ body {
   text-align: center;
   height: 50px;
   border: solid 2px #37373C;
+  position: relative;
+}
+
+.currentlyPlayingInfo {
+  position: relative;
+  z-index: 30;
 }
 
 .noSongs{
@@ -187,6 +194,30 @@ body {
 .PlayingControl {
   width: 700px;
   margin: 0 auto;
+}
+
+.spotifyButton{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(/img/music-images/spotify.png) center right;
+  background-size:200px 200px;
+  height: 71px;
+  width: 100px;
+  opacity: 0.4;
+  z-index: 20;
+}
+
+.pandoraButton{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(/img/music-images/pandora.png) center left;
+  background-size: 150px 150px;
+  height: 71px;
+  width: 100px;
+  opacity: 0.4;
+  z-index: 20;  
 }
 
 .iconPlay {
